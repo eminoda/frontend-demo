@@ -1,0 +1,20 @@
+{
+  "name": "frontend-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=18",
+    "npm": ">=10"
+  },
+  "author": "eminoda",
+  "license": "ISC",
+  "dependencies": {
+    "only-allow": "^1.2.1"
+  }
+}
