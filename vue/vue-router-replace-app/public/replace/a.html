@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a</title>
+  </head>
+  <body>
+    <h2>a</h2>
+    <button onclick="to('/replace/b.html')">to b</button>
+    <button onclick="replace('/replace/b.html')">replace b</button>
+    <button onclick="to('/replace/c.html')">to c</button>
+    <button onclick="back()">back</button>
+    <br />
+    <script>
+      function to(path) {
+        window.history.pushState({ id: Date.now() }, Date.now(), path);
+      }
+      function replace(path) {
+        window.history.replaceState(history.state, "", path);
+      }
+      function back() {
+        window.history.go(-1);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>b</title>
+  </head>
+  <body>
+    <h2>b</h2>
+    <button onclick="to('/replace/c.html')">to c</button> <button onclick="back()">back</button>
+    <script>
+      function to(path) {
+        window.history.pushState({ id: "b" }, "", path);
+      }
+      function back() {
+        window.history.go(-1);
+      }
+    </script>
+  </body>
+</html>
